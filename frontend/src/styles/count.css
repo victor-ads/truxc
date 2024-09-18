@@ -1,0 +1,29 @@
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.counter-container div {
+  flex: 1;
+  padding: 10px;
+}
+
+.counter-container h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.counter-container span {
+  font-weight: bold;
+  color: #007bff; /* Adjust color as needed */
+}

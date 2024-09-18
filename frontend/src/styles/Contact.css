@@ -1,0 +1,157 @@
+/* src/styles/Contact.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+.body{
+  font-family: 'Poppins', sans-serif;
+}
+/* Base styling for the section */
+.responsive-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for the background image container */
+.responsive-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align content to the right */
+  color: #fff;
+}
+
+/* Styling for the text content inside the background image */
+.text-content {
+  background: rgba(252, 249, 249, 0.5); /* Semi-transparent background for better text readability */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 40%; /* Adjust as needed */
+  text-align: left; /* Align text to the left within the container */
+  margin-right: 20px; /* Space between text and edge of the container */
+}
+
+/* Form styling */
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+/* Contact details styling */
+.contact-details {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-details h2 {
+  margin-bottom: 16px;
+}
+
+.contact-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-details li {
+  margin-bottom: 8px;
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .responsive-image {
+    height: 300px;
+  }
+
+  .text-content {
+    padding: 15px;
+    font-size: 14px;
+    max-width: 50%;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+  }
+
+  .contact-form button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-image {
+    height: 200px;
+  }
+
+  .text-content {
+    padding: 10px;
+    font-size: 12px;
+    max-width: 70%;
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 6px;
+  }
+
+  .contact-form button {
+    padding: 6px 12px;
+  }
+}

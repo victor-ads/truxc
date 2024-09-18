@@ -1,0 +1,96 @@
+/* Container for the image and text */
+.responsive-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.responsive-image {
+  flex: 1;
+  min-width: 300px; /* Adjust as needed */
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px; /* Adjust as needed */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0a0505;
+}
+
+/* Recruitment Form Styles */
+.recruitment-form-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #050202;
+}
+
+label {
+  font-weight: bold;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="file"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+.terms-and-conditions {
+  border: 1px solid #131010;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #0c0707;
+  border-radius: 4px;
+  display: none; /* Hidden by default; show via JavaScript */
+  color: #070707; /* Change text color to white */
+}
